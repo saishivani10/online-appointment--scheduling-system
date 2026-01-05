@@ -1,0 +1,113 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.dashboard-container h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.dashboard-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.appointment-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.appointment-card h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-card p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status.pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status.confirmed {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status.completed {
+  background-color: #3498db;
+  color: white;
+}
+
+.status.cancelled {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.dashboard-section ul {
+  list-style: none;
+}
+
+.dashboard-section li {
+  margin-bottom: 1rem;
+}
+
+.dashboard-section a {
+  display: block;
+  padding: 0.75rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.dashboard-section a:hover {
+  background-color: #2980b9;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
